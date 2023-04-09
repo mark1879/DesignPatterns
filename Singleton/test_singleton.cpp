@@ -80,7 +80,7 @@ int main()
     TestSingleton();
     TestSingletonThreadSafety();
     TestSingletonInCpp11();
-
+    
     std::cout << "test done!" << std::endl;
 
     return 0;

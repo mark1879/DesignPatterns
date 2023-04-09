@@ -13,10 +13,6 @@ namespace SingletonInCpp11
 
         DBConfig(const DBConfig&) = delete;
         DBConfig& operator=(const DBConfig&) = delete;
-
-        DBConfig(DBConfig&&) = delete;
-        DBConfig& operator=(DBConfig&&) = delete;
-
     private:
         DBConfig() {
             std::cout << "DBConfig()" << std::endl;

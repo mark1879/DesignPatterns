@@ -13,10 +13,6 @@ namespace SingletonThreadSafety
 
         DBConfig(const DBConfig&) = delete;
         DBConfig& operator=(const DBConfig&) = delete;
-
-        DBConfig(DBConfig&&) = delete;
-        DBConfig& operator=(DBConfig&&) = delete;
-
     private:
         DBConfig()
         {
