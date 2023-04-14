@@ -25,7 +25,8 @@ namespace SingletonThreadSafety
         }
 
     private:
-        // 防止“指针被 new 出来以后，对象还未被初始化，导致其它线程调用未初始化的对象”
+        // 防止“指针被 new 出来以后，config_被赋值，但对象还未被初始化，导致其它线程访问未初始化的对象”
+        // volatile 是否真的有效？
         volatile static DBConfig* config_;
         static std::mutex mutex_;
     };
